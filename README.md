@@ -1,6 +1,4 @@
 # Manasthithi
-
-![Manasthithi](https://placehold.it/150x150)  
 *Your Mental Health Companion*
 
 Manasthithi is a web platform designed to provide mental health support for students. It aims to raise awareness, and provide a space to help students manage their mental well-being.
