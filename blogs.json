@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "Understanding Mental Health",
+        "content": "Mental health is essential for overall well-being...",
+        "date": "2024-12-15",
+        "author": "John Doe"
+    },
+    {
+        "id": 2,
+        "title": "How to Manage Stress Effectively",
+        "content": "Stress management techniques are crucial for maintaining mental health...",
+        "date": "2024-12-14",
+        "author": "Jane Doe"
+    }
+]

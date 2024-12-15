@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Risk Prediction</title>
+    <link rel="stylesheet" href="static/css/assessment.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Manasthithi</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/test">Self Assessment</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Depression Risk Prediction Form Section -->
+    <section class="form-section">
+        <div class="form-container">
+            <h2>Depression Risk Prediction</h2>
+            <p>Fill in the details below to get insights into your mental well-being.</p>
+
+            <form action="/predict" method="POST">
+                <div class="form-group">
+                    <label for="Gender">Gender:</label>
+                    <select name="Gender" required>
+                        <option value="" disabled selected>Select your gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Age">Age:</label>
+                    <input type="number" name="Age" placeholder="Enter your age" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Academic Pressure">Academic Pressure:</label>
+                    <input type="number" name="Academic Pressure" placeholder="Rate on a scale of 1-10" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Study Satisfaction">Study Satisfaction:</label>
+                    <input type="number" name="Study Satisfaction" placeholder="Rate on a scale of 1-10" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Sleep Duration">Sleep Duration:</label>
+                    <select name="Sleep Duration" required>
+                        <option value="" disabled selected>Select your sleep duration</option>
+                        <option value="5-6 hours">5-6 hours</option>
+                        <option value="7-8 hours">7-8 hours</option>
+                        <option value="More than 8 hours">More than 8 hours</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Dietary Habits">Dietary Habits:</label>
+                    <select name="Dietary Habits" required>
+                        <option value="" disabled selected>Select your dietary habits</option>
+                        <option value="Unhealthy">Unhealthy</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Healthy">Healthy</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Suicidal Thoughts">Have you ever had suicidal thoughts?</label>
+                    <select name="Suicidal Thoughts" required>
+                        <option value="" disabled selected>Choose an option</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Study Hours">Study Hours:</label>
+                    <input type="number" name="Study Hours" placeholder="Enter daily study hours" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Financial Stress">Financial Stress:</label>
+                    <input type="number" name="Financial Stress" placeholder="Rate on a scale of 1-10" required>
+                </div>
+
+                <!-- Remove the <a> tag and use only the submit button -->
+                <button type="submit" class="cta-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Manasthithi. All rights reserved. Designed for your mental well-being.</p>
+    </footer>
+</body>
+</html>

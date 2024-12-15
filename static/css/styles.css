@@ -1,0 +1,323 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Global Font Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header Styles */
+
+/* Header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4e89ae;
+    color: white;
+    padding: 15px 30px;
+}
+
+.header-container .logo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.header-container nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.header-container nav ul li {
+    margin: 0 15px;
+}
+
+.header-container nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header-container nav ul li a:hover {
+    color: #ffcccb;
+}
+/* Hero Section */
+.welcome-section {
+    background-color: #e0f7fa;
+    min-height: 90vh; /* Increase height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.welcome-content h2 {
+    font-size: 4rem; /* Larger size */
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.welcome-content p {
+    font-size: 1.5rem; /* Adjust font size */
+    margin-bottom: 20px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.welcome-content em {
+    font-style: italic;
+    color: #4e89ae;
+    font-size: 1.3rem;
+}
+
+.cta-btn {
+    background-color: #f1c40f;
+    color: white;
+    padding: 20px 40px; /* Increase padding */
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.3rem; /* Increase font size */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.cta-btn:hover {
+    background-color: #e0a700;
+    transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+
+/* Insights Section */
+.insights-section {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.insights-section h3 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.insights-section p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* About Us Section */
+/* About Us Section */
+.about-us-section {
+    background-color: #f9f9f9;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-us-content h3 {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.about-us-content p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Features Container */
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Feature Card */
+.feature-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.feature-card h4 {
+    font-size: 1.5rem;
+    color: #4e89ae;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* Slider Styles */
+.about-us-slider {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    animation: auto-scroll 15s linear infinite; /* Smooth scrolling animation */
+}
+
+.slide {
+    min-width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.slide h4 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.slide p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Keyframes for Auto-Scrolling */
+@keyframes auto-scroll {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
+
+/* Contact Us Section */
+.contact-us-section {
+    background-color: #e0f7fa;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-us-section h3 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-us-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contact-us-section a {
+    background-color: #4e89ae;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-us-section a:hover {
+    background-color: #357a92;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4e89ae;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+#welcome{
+    color: #e0a700;
+    background: none;
+    font-size: smaller;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+    }
+
+    .insights-section p, .about-us-section p {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
